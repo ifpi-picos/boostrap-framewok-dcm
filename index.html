@@ -11,90 +11,132 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-sucess">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
-      aria-expanded="false" aria-label="Alterna navegação">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Equipe_dcm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(página atual)</span>
-          </a>
+          <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#rodape">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Desativado</a>
+          <a class="nav-link disabled" href="#contato">Equipe</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="cadastra-se" aria-label="cadastra-se">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Entrar</button>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
       </form>
     </div>
   </nav>
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <br>
+  <br>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="../boostrap-framewok-dcm/img/poster1.jpg" alt="Primeiro Slide">
+        <img class="d-block w-100" src="img/war.jpg" style="width: 100%;height: 760px; alt="Primeiro Slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../boostrap-framewok-dcm/img/poster1.jpg" alt="Segundo Slide">
+        <img class="d-block w-100" src="img/gear.jpg" alt="Segundo Slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../boostrap-framewok-dcm/img/poster1.jpg" alt=" Slide">
+        <img class="d-block w-100" src="img/gears-of-war-2.jpg" alt="Terceiro Slide">
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Anterior</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Próximo</span>
     </a>
-  </div>
+  </div> 
   <br>
-
-  <div class="container">
+  <br>
+  <div class="main-heading-holder">
+      <div class="main-heading sytle-2">
+         <h1>Equipe_DCM:</h1>
+      </div>
+   </div>
+   <br>
+  <div class="container" id="contato">
     <div class="row">
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="img/avatar 1.jpeg" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Daniel</h5>
-            <p class="card-text">Não perca a motivação só porque as coisas não estão correndo como o previsto. Adversidade gera sabedoria e é isso que levará você ao sucesso.</p>
-            <a href="#" class="btn btn-primary">Saiba mais</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="img/avatar 1.jpeg" alt="Imagem de capa do card">
+          <img src="img/viado.jpeg" style="width: 250;height: 400px;class="rounded-circle" alt="Circular Image">
           <div class="card-body">
             <h5 class="card-title">Dudu</h5>
-            <p class="card-text">Não perca a motivação só porque as coisas não estão correndo como o previsto. Adversidade gera sabedoria e é isso que levará você ao sucesso.</p>
-            <a href="#" class="btn btn-primary">Saiba mais</a>
+            <a onclick="mostrar()" class="btn btn-primary" style="color: #fff!important">Saiba mais</a>
+            <p class="mostrar1"> Esteve alsente na criação do site <br> Contato: (89) 99441-8654 <br> Email: .... </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <img src="img/lindo.jpeg" style="width: 250;height: 400px; class="rounded-circle" alt="Circular Image">
+          <div class="card-body">
+            <h5 class="card-title">Daniel</h5>
+            <a onclick="mostrar1()" class="btn btn-primary" style="color: #fff!important">Saiba mais</a>
+            <p class="mostrar2"> Programador <br> Desenvolvedor <br> Designer Gráfico <br> Contato: (89) 99402-8811 <br>Email: danieliinfsilva2017@gmail.com</p>
           </div>
         </div>
       </div>
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="img/avatar 1.jpeg" alt="Imagem de capa do card">
+          <img src="img/bebo.jpeg" style="width: 250;height: 400px;class="rounded-circle" alt="Circular Image">
           <div class="card-body">
             <h5 class="card-title">Rikelmy</h5>
-            <p class="card-text">Não perca a motivação só porque as coisas não estão correndo como o previsto. Adversidade gera sabedoria e é isso que levará você ao sucesso.</p>
-            <a href="#" class="btn btn-primary">Saiba mais</a>
+            <a onclick="mostrar2()" class="btn btn-primary" style="color: #fff!important">Saiba mais</a>
+            <p class="mostrar3"> Não fez nada <br> Contato: (89) 99982-7716 <br> Email: .... </p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <br>
+  <br>
+
+  <footer id="rodape">
+    <p class=""><a href="#">Voltar ao topo</a></p>
+    <p>© Equipedcm, 2019</p>
+    <p>Email: equipedcmd2@gmail.com</p>
+    <p>Contato: (89)99402-8811</p>
+  </footer>
 </body>
+<script>
+  const mostrar = () => {
+    let g = document.querySelector('.mostrar1')
+    if (g.classList[1] == 'mostrar') {
+      g.classList.remove('mostrar')
+    }else{
+      g.classList.add('mostrar');
+    }
+  }
+  const mostrar1 = () => {
+    let g = document.querySelector('.mostrar2')
+    if (g.classList[1] == 'mostrar') {
+      g.classList.remove('mostrar')
+    }else{
+      g.classList.add('mostrar');
+    }
+  }
+  const mostrar2 = () => {
+    let g = document.querySelector('.mostrar3')
+    if (g.classList[1] == 'mostrar') {
+      g.classList.remove('mostrar')
+    }else{
+      g.classList.add('mostrar');
+    }
+  }
+</script>
 
 </html>
